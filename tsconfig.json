@@ -1,15 +1,32 @@
 {
    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "target": "es2017",
+      "module": "commonjs",
+      "allowJs": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "rootDir": "./",
+      "outDir": "./dist",
+      "resolveJsonModule": true,
+      "removeComments": false,
+      "noEmit": false,
+      "typeRoots": [
+        "./node_modules/@types",
+        "src/@types"
+      ], 
       "lib": [
          "es5",
          "es6"
-      ],
-      "target": "es5",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "outDir": "./build",
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "sourceMap": true
-   }
-}
+      ]
+      
+   }, 
+   "include": [
+      "src/**/*.ts",
+      "src",
+      "src/index.ts"
+    ]
+  }
+ 
